@@ -13,6 +13,7 @@ public:
 	virtual ~string();
 	string(const string&);
 	string(const char*);
+	string(int, char);
 	string& operator=(const char*);
 	string& operator=(const string&);
 	string& operator+=(const string&);
@@ -24,7 +25,7 @@ public:
 	bool empty() const;
 	const char* c_str() const;
 	string substr(const size_type start, const size_type length) const;
-	char operator[](const size_type n) const;
+	char& operator[](const size_type n) const;
 	char at(const size_type n) const;
 	string& erase(size_type pos, size_type len);
 };

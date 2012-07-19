@@ -1,6 +1,6 @@
 #include <string.h> // strlen
 #include <stdlib.h> // malloc, realloc
-#include "my_string.h"
+#include "string.h"
 
 namespace cs33001 {
 
@@ -83,6 +83,11 @@ bool string::operator==(const string& s) const
 	return !strcmp(p, s.p);
 }
 
+string::string (int sz, char c) { 
+char*p = malloc(sz); 
+if (!(*p)) return; 
+memset(*p, c, sz+1); *p[sz+1] = '\0'; 
+}
 void string::clear()
 {
 	free(p);
@@ -129,7 +134,7 @@ string string::substr(const size_type start, const size_type len_orig) const
 }
 
 // unchecked access
-char string::operator[](const size_type n) const
+char& string::operator[](const size_type n) const
 {
 	return p[n];
 }
