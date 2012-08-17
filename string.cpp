@@ -83,10 +83,14 @@ bool string::operator==(const string& s) const
 	return !strcmp(p, s.p);
 }
 
-string::string (int sz, char c) { 
-char*p = malloc(sz); 
-if (!(*p)) return; 
-memset(*p, c, sz+1); *p[sz+1] = '\0'; 
+string::string (int size, char filler) {
+	char * temp;					//create the pointer for the string to be returned
+	temp = new char [size + 1];     //allocate enough memory for the size and the null terminator
+
+	for (int i = 0; i < size; i++)  //fill the character array with the filler character
+		temp[i] = filler;
+
+	temp[size] = '\0';
 }
 void string::clear()
 {
