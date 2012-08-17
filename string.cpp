@@ -29,7 +29,7 @@ static char* strdup_never_null(const char* s)
 	memcpy(p, s, len);
 	return p;
 }
-string strdup_never_null (const char& c) {
+static char* strdup_never_null (const char& c) {
 char* str = new char[2];
 str[0] = c; str[1] = 0;
 return strdup_never_null(str);
