@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/courses/cs33001/svn/!svn/ver/589/cs33001_shared/String/Test_Progs
+END
+test_input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_input.cpp
+END
+test_output.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_output.cpp
+END
+test_resize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_resize.cpp
+END
+test_ctor_copy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_ctor_copy.cpp
+END
+test_greater_than.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_greater_than.cpp
+END
+test_less_than_or_equal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_less_than_or_equal.cpp
+END
+test_index.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_index.cpp
+END
+file_list.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/courses/cs33001/svn/!svn/ver/589/cs33001_shared/String/Test_Progs/file_list.txt
+END
+test_ctor_c_string_equals.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/courses/cs33001/svn/!svn/ver/571/cs33001_shared/String/Test_Progs/test_ctor_c_string_equals.cpp
+END
+test_swap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_swap.cpp
+END
+test_size.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_size.cpp
+END
+test_not_equals.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_not_equals.cpp
+END
+test_c_str.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_c_str.cpp
+END
+test_ctor_default.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_ctor_default.cpp
+END
+test_ctor_int_char.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_ctor_int_char.cpp
+END
+test_add_string.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_add_string.cpp
+END
+test_add_assign2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_add_assign2.cpp
+END
+test_find.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_find.cpp
+END
+test_less_than.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_less_than.cpp
+END
+test_add_assign_string.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_add_assign_string.cpp
+END
+test_substr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_substr.cpp
+END
+test_assign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_assign.cpp
+END
+test_add_char.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_add_char.cpp
+END
+test_clear.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_clear.cpp
+END
+test_getline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_getline.cpp
+END
+test_add_assign_char.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_add_assign_char.cpp
+END
+test_greater_than_or_equal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_greater_than_or_equal.cpp
+END
+driver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/driver.cpp
+END
+test_capacity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/courses/cs33001/svn/!svn/ver/570/cs33001_shared/String/Test_Progs/test_capacity.cpp
+END
