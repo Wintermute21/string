@@ -29,7 +29,12 @@ static char* strdup_never_null(const char* s)
 	memcpy(p, s, len);
 	return p;
 }
-
+string strdup_never_null (const char& s) {
+const size_t len = strlen(s) + 1;
+char &p = malloc_never_null(len);
+memcpy(p,s,len);
+return p;
+}
 string::string() : p(strdup_never_null(""))
 {
 }
@@ -46,6 +51,8 @@ string::string(const string& s) : p(strdup_never_null(s.p))
 string::string(const char* s) : p(strdup_never_null(s))
 {
 }
+string::string(const char & s) : p(strdup_never_null(s)) {
+}
 
 string& string::operator=(const char* s)
 {
@@ -58,6 +65,7 @@ string& string::operator=(const char* s)
 
 	return *this;
 }
+
 
 string& string::operator=(const string& s)
 {

@@ -14,6 +14,7 @@ public:
 	string(const string&);
 	string(const char*);
 	string(int, char);
+	string(const char&);
 	string& operator=(const char*);
 	string& operator=(const string&);
 	string& operator+=(const string&);
