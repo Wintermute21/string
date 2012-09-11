@@ -1,8 +1,5 @@
-#include <cstring> // strlen
-#include <stdlib.h> // malloc, realloc
 #include "string.h"
 #include <iostream>
-using std::strlen;
 namespace cs33001 {
 
 const string::size_type string::npos = static_cast<size_t>(-1);
@@ -75,8 +72,8 @@ string& string::operator=(const string& s)
 
 string& string::operator+=(const string& s)
 {
-	const size_type lenp = strlen(p);
-	const size_type lens = strlen(s.p) + 1;
+	const size_type lenp = std::strlen(p);
+	const size_type lens = std::strlen(s.p) + 1;
 	p = static_cast<char*>(realloc(p, lenp + lens)); // could return NULL
 	memmove(p+lenp, s.p, lens); // p and s.p MAY overlap
 	return *this;
@@ -84,7 +81,7 @@ string& string::operator+=(const string& s)
 
 bool string::operator==(const char* s) const
 {
-	return !strcmp(p, s);
+	return !std::strcmp(p, s);
 }
 
 bool string::operator==(const string& s) const
@@ -155,7 +152,7 @@ char& string::operator[](const size_type n) const
 // checked access
 char string::at(const size_type n) const
 {
-	if ( n > strlen(p) )
+	if ( n > std::strlen(p) )
 		throw std::out_of_range("my::string::at()");
 
 	return p[n];

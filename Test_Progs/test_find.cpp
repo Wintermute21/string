@@ -1,16 +1,21 @@
 //===========================================================================
 /***  string - Test: find()
  */
+#ifdef STD_STRING
+#include <string>
+using std::string;
+#else
+#include "string.h"
+using cs33001::string;
+#endif
 
-
-  #include "string.h"
 
 #include <iostream>
 #include <cassert>
 using std::cin;
 using std::cout;
 using std::cerr;
-
+using cs33001::string;
 void test_find_present_start();
 void test_find_present_middle();
 void test_find_present_end();
@@ -48,8 +53,8 @@ void test_find_present_start()
 void test_find_present_middle()
 {
     // Setup fixture
-    cs33001::string wwwRSTww("wwwRSTww");
-    cs33001::string RST("RST");
+   string wwwRSTww("wwwRSTww");
+   string RST("RST");
 
     // Test
     int RST_idx = wwwRSTww.find(RST);

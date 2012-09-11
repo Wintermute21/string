@@ -1,6 +1,6 @@
 #include <sys/types.h> // size_t
 #include <stdexcept>
-#include <istream>
+#include <iostream>
 #ifndef string_h__
 #define string_h__
 
