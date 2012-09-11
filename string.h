@@ -29,6 +29,11 @@ public:
 	char& operator[](const size_type n) const;
 	char at(const size_type n) const;
 	string& erase(size_type pos, size_type len);
+	string  getline(std::istream&, const char);
+	friend std::ostream& operator<<(std::ostream&, const string&);
+	
 };
+std::istream& operator>>(std::istream&, string&);
 
+void getline(std::istream&,string&);
 } // namespace

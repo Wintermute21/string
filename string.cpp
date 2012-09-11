@@ -1,6 +1,7 @@
 #include <string.h> // strlen
 #include <stdlib.h> // malloc, realloc
 #include "string.h"
+#include <iostream>
 
 namespace cs33001 {
 
@@ -179,6 +180,48 @@ string& string::erase(size_type pos, size_type len)
 	p = static_cast<char*>(realloc(p, s+pos));
 
 	return *this;
+}
+
+string  string::getline(std::istream& in, const char delim)
+{
+	int *ptr;
+	int len;
+	char next;
+	int i = 0;
+	in.get(next);
+	while(next!=delim && !in.eof()){
+		ptr[i]=next;
+		in.get(next);
+		++i;
+	}
+	len=i;
+	ptr[len]='\0'; 
+
+	return *this;
+
+}
+std::istream& operator>>(std::istream& in, string& delim) {
+	delim.getline(in, ' ');
+	return in;
+}
+
+void getline(std::istream& in, string& result)
+{
+	result.getline(in, '\n');
+}
+
+std::ostream& operator<<(std::ostream& outs, const string& rhs)
+{
+	int i=0;                                                
+	while(rhs.p[i]!=0)
+	{
+		outs<<rhs.p[i];
+		++i;
+	}
+	
+	
+	
+	return outs;
 }
 
 } // namespace

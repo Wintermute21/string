@@ -2,13 +2,8 @@
 /***  string - Test: find()
  */
 
-#ifdef STD_STRING
-  #include <string>
-  using std::string;
-#else
+
   #include "string.h"
-  using cs33001::string;
-#endif
 
 #include <iostream>
 #include <cassert>
