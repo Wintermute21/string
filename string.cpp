@@ -1,8 +1,8 @@
-#include <string.h> // strlen
+#include <cstring> // strlen
 #include <stdlib.h> // malloc, realloc
 #include "string.h"
 #include <iostream>
-
+using std::strlen;
 namespace cs33001 {
 
 const string::size_type string::npos = static_cast<size_t>(-1);

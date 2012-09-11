@@ -31,8 +31,8 @@ int main()
 void test_find_present_start()
 {
     // Setup fixture
-    string ABCxxxx("ABCxxxx");
-    string ABC("ABC");
+    cs33001::string ABCxxxx("ABCxxxx");
+    cs33001::string ABC("ABC");
 
     // Test
     int ABC_idx = ABCxxxx.find(ABC);
@@ -48,8 +48,8 @@ void test_find_present_start()
 void test_find_present_middle()
 {
     // Setup fixture
-    string wwwRSTww("wwwRSTww");
-    string RST("RST");
+    cs33001::string wwwRSTww("wwwRSTww");
+    cs33001::string RST("RST");
 
     // Test
     int RST_idx = wwwRSTww.find(RST);

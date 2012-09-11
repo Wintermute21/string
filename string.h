@@ -1,5 +1,11 @@
 #include <sys/types.h> // size_t
 #include <stdexcept>
+#include <istream>
+#ifndef string_h__
+#define string_h__
+
+
+
 
 namespace cs33001 {
 
@@ -37,3 +43,4 @@ std::istream& operator>>(std::istream&, string&);
 
 void getline(std::istream&,string&);
 } // namespace
+#endif // string_h__
