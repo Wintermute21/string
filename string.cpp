@@ -1,6 +1,13 @@
 #include "string.h"
 #include <iostream>
+#include <cstring>
+#include <cstdlib>
+#include <ostream>
+#include <istream>
+using namespace std;
 namespace cs33001 {
+	
+
 
 const string::size_type string::npos = static_cast<size_t>(-1);
 
@@ -72,8 +79,8 @@ string& string::operator=(const string& s)
 
 string& string::operator+=(const string& s)
 {
-	const size_type lenp = std::strlen(p);
-	const size_type lens = std::strlen(s.p) + 1;
+	const size_type lenp = strlen(p);
+	const size_type lens = strlen(s.p) + 1;
 	p = static_cast<char*>(realloc(p, lenp + lens)); // could return NULL
 	memmove(p+lenp, s.p, lens); // p and s.p MAY overlap
 	return *this;
@@ -81,7 +88,7 @@ string& string::operator+=(const string& s)
 
 bool string::operator==(const char* s) const
 {
-	return !std::strcmp(p, s);
+	return !strcmp(p, s);
 }
 
 bool string::operator==(const string& s) const
@@ -152,7 +159,7 @@ char& string::operator[](const size_type n) const
 // checked access
 char string::at(const size_type n) const
 {
-	if ( n > std::strlen(p) )
+	if ( n > strlen(p) )
 		throw std::out_of_range("my::string::at()");
 
 	return p[n];
@@ -186,7 +193,7 @@ string  string::getline(std::istream& in, const char delim)
 	char next;
 	int i = 0;
 	in.get(next);
-	while(next!=delim && !in.eof()){
+	while(next!=delim && !in.eof()) {
 		ptr[i]=next;
 		in.get(next);
 		++i;
@@ -219,6 +226,5 @@ std::ostream& operator<<(std::ostream& outs, const string& rhs)
 	
 	
 	return outs;
+	}
 }
-
-} // namespace
